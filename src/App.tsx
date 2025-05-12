@@ -7,7 +7,7 @@ import Home from './pages/home';
 
 function App() {
   return (
-    <Router basename="/ProjetoResidencia"> {/* Defina a base aqui para o subdiretório */}
+    <Router> {/* Removido o basename para rodar localmente sem subdiretório */}
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
