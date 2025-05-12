@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: '/ProjetoResidencia/', 
+  base: '/ProjetoResidencia/', // Certifique-se de que o base é configurado para o subdiretório
 })

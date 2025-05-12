@@ -1,4 +1,3 @@
-// src/App.tsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './layout/layout';
 import NoPage from './pages/nopage';
@@ -8,7 +7,7 @@ import Home from './pages/home';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ProjetoResidencia"> {/* Defina a base aqui para o subdiretório */}
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
@@ -20,4 +19,3 @@ function App() {
 }
 
 export default App;
-
